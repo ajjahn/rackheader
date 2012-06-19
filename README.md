@@ -1,6 +1,6 @@
-# Rackheader
+# Rack::Header
 
-TODO: Write a gem description
+Rack Middleware for overriding and adding additional HTTP response headers
 
 ## Installation
 
@@ -18,7 +18,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+# config.ru
+require 'rackheader'
+require 'rack/lobster'
+
+use Rack::Header, 'Access-Control-Allow-Origin' => '*', 'Foo' => 'Bar', 'Biz' => 'Baz'
+run Rack::Lobster.new
+```
+
+    $ rackup config.ru
 
 ## Contributing
 
