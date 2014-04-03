@@ -16,5 +16,5 @@ Gem::Specification.new do |gem|
   gem.version       = Rack::Header::VERSION
   
   gem.add_development_dependency 'rake'
-  gem.add_dependency 'rack', '~> 1.4.1'
+  gem.add_dependency 'rack', '>= 1.4.1'
 end
