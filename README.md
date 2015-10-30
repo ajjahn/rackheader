@@ -29,6 +29,12 @@ run Rack::Lobster.new
 
     $ rackup config.ru
 
+### HTTP_* environment variables
+
+In addition to specifying static headers in your application config, you can also set headers using environment variables.
+
+For example, if you want to set the `X-Robots-Tag` only in certain environments, you can add the `HTTP_X_ROBOTS_TAG` environment variable.
+
 ## Contributing
 
 1. Fork it
