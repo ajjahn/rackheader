@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["ajjahn@gmail.com"]
   gem.description   = %q{Rack Middleware for overriding and adding additional HTTP response headers}
   gem.summary       = %q{Rack Middleware for overriding and adding additional HTTP response headers}
-  gem.homepage      = "https://github.com/ahn/rackheader"
+  gem.homepage      = "https://github.com/ajjahn/rackheader"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
