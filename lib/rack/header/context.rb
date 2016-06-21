@@ -11,7 +11,7 @@ module Rack::Header
 
       @headers = headers.merge(@headers)
     end
-    
+
     def call(env)
       status, headers, response = @app.call(env)
 
