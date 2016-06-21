@@ -5,7 +5,7 @@ module Rack::Header
 
       # Map HTTP_* environment variables to response headers
       @headers = Hash[*ENV.select {|k,v| k.start_with? 'HTTP_'}
-                          .collect {|k,v| [k.sub(/^HTTP_/, ''), v]}
+                          .collect {|k,v| [k.sub(/\AHTTP_/, ''), v]}
                           .collect {|k,v| [k.split('_').collect(&:capitalize).join('-'), v]}
                           .flatten]
 
